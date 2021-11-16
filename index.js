@@ -1,8 +1,8 @@
 //write your code here
 function replaceWithYerr(array, startIndex = 0, numOfElements = array.length) {
     const yerrArray = [...array];
-    // If only 1 or 2 arguments, iterate from start to array length 
-    // Else, iterate from start to numOfElements + startIndex
+    // If only 1 or 2 arguments is given, add startingIndex to numOfElements
+    // Iterate from startIndex to numOfElements
     // Replace element in iteration with 'yerr'
     if (numOfElements !== array.length) {
         numOfElements += startIndex;
