@@ -1,12 +1,7 @@
 //write your code here
 function replaceWithYerr(array, startIndex = 0, numOfElements = array.length) {
     const yerrArray = [...array];
-    if (startIndex === 0 && numOfElements === array.length) {
-        for (let i = 0; i < array.length; i++) {
-            yerrArray[i] = 'yerr';
-        }
-    }
-    else if (numOfElements === array.length) {
+    if (numOfElements === array.length) {
         for (let i = startIndex; i < array.length; i++) {
             yerrArray[i] = 'yerr';
         }
