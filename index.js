@@ -1,6 +1,9 @@
 //write your code here
 function replaceWithYerr(array, startIndex = 0, numOfElements = array.length) {
     const yerrArray = [...array];
+    // If only 1 or 2 parameters, iterate from start to array length 
+    // Else, iterate from start to numOfElements + startIndex
+    // Replace element in iteration with 'yerr'
     if (numOfElements === array.length) {
         for (let i = startIndex; i < array.length; i++) {
             yerrArray[i] = 'yerr';
